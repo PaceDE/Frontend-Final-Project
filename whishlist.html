@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wishlist</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Import CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <link href="css/owl.theme.default.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">  
+       
+        <link href="css/whishlist.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/headerfooter.css">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Import Javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
+        <script src="https://kit.fontawesome.com/62b96e2797.js" crossorigin="anonymous"></script>
+        <script src="./js/dropdown.js"></script>
+    </head>
+<body>
+    
+    <header class="header1">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-lg-1 col-md-2 col-sm-2 col-2">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-5 col-5">
+                    <div class="category-select dropdown">
+                        <button id="items" data-toggle="dropdown" onclick="changeCaret()">
+                        Select Category
+                        <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="items">
+                            <li><a onclick="itemsSet(this);" style="display:flex">Select Category</a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Vegetables </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Fruits </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Salads </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Fish & Seafood </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Fresh Meat </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Health Product </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Butter & Eggs </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-5 col-5">
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="text" name="search" placeholder="Search Products..." class="search">
+                            <button type="submit" class="my-button">
+                            <i class="bi bi-search" style="color:#4D4D4D"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-1 col-md-1 col-sm-0 col-0">
+                    <div class="whishlist">
+                        <a href="whishlist.html">
+                            <i class="bi bi-suit-heart"></i>
+                            <div class="circle">2</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-1 col-md-1 col-sm-0 col-0">
+                    <div class="profile">
+                        <a href="login.html">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="phone-no">
+                        <i class="bi bi-telephone-inbound"></i>
+                        <span>+977xxxxxxxxxxx</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="question-mark">
+                        <i class="bi bi-question-circle"></i>
+                        <span>Help & More</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+ </header>
+
+ <!-- Header2-->
+
+<section class="header2">
+
+    <input type="checkbox" id="check">
+        <label for="check" class="menu">
+            <i class="fa fa-bars" style="color:black;font-size: 35px;" onclick="clicked()"></i>
+        </label>
+    <nav class="header-block">
+
+        <ul  class="no-list">
+            <li>
+                <a href="index.html" class="active">Home</a>       
+            </li>
+            <li>   
+                <a href="about.html">About Us</a>
+            </li>
+           
+            <li>
+                <a href="shop.html">Shop</a>    
+            </li>
+        </ul>
+        <ul class="has-list">
+            <li>
+                <a href="#">
+                    Page
+                    <span class="arrow">></span>
+                </a>
+                <ul class="dropdown">
+                    <a href="#"><li>Team</li></a>
+                    <a href="cart.html"><li>Cart</li></a>
+                    <a href="checkout.html"><li>Checkout</li></a>
+                    <a href="myaccount.html"><li>My Account</li></a>
+                    <a href="login.html"><li>Login Account</li></a>
+                    <a href="register.html"><li>Register Account</li></a>
+                    <a href="#"><li>Faq</li></a>
+                </ul>  
+            </li>
+        </ul>
+        <ul class="no-list">
+            <li>   
+                <a href="#">BLog</a>      
+            </li>
+            <li>     
+                <a href="#">Contact US</a>
+            </li>
+        </ul>
+     
+    </nav>
+
+    <div class="box">
+
+        
+    
+        <div class="whishlist">
+            <a href="whishlist.html">
+                <i class="bi bi-suit-heart"></i>
+                <div class="circle">2</div>
+            </a>
+        </div>
+    
+
+    
+        <div class="profile">
+            <a href="login.html">
+                <i class="bi bi-person"></i>
+            </a>
+        </div>
+   
+
+        <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvasWithBothOptions" class="basket">
+            <div class="basket-div">
+                <i class="bi bi-basket2"></i>
+                <div class="circle">5</div>
+            </div>
+        </a>
+</div>
+
+        
+           
+        
+    
+    
+    <!--Offcanvas-->
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasWithBothOptionsLabel" data-bs-scroll="true" >
+        <div class="offcanvas-header">
+            <div class="minicart-header">
+                <i class="bi bi-bag-fill"></i>
+                <span><b>3 Item</b></span>
+                <button type="button" class="close-button" data-bs-dismiss="offcanvas" aria-label="Close">&times;</button>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="minicart-products">
+                <div class="minicart-image">
+                    <img src="./images/10.png" alt="" style="width:100%;">
+                </div>
+                <div class="minicart-detail">
+                    <a class="details" href="#">Carrot</a>
+                    <span class="price">Rs 99 * 5</span>
+                    <button type="button" class="remove-item" aria-label="Close">&times;</button>
+                </div>
+            </div>
+            <div class="minicart-products">
+                <div class="minicart-image">
+                    <img src="./images/11.png" alt="" style="width:100%;">
+                </div>
+                <div class="minicart-detail">
+                    <a class="details" href="#">Turnip</a>
+                    <span class="price">Rs 149 * 3</span>
+                    <button type="button" class="remove-item" aria-label="Close">&times;</button>
+                </div>
+            </div>
+            <div class="minicart-products">
+                <div class="minicart-image">
+                    <img src="./images/12.png" alt="" style="width:100%;">
+                </div>
+                <div class="minicart-detail">
+                    <a class="details" href="#">Tomato</a>
+                    <span class="price">Rs 99 * 10</span>
+                    <button type="button" class="remove-item" aria-label="Close">&times;</button>
+                </div>
+            </div>
+            <div class="minicart-bottom">
+                <h6>Total:<span>Rs 1932</span></h6>
+                <div class="view-cart">
+                    <a href="#">View Cart</a>
+                </div>
+                <div class="proceed-checkout">
+                    <a href="#">Proceed Checkout</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</section>
+
+ <!-- Banner-->
+<section class="banner">
+    <h3>Whishlist</h3>
+    <span>
+        <a href="#">HOME &nbsp;</a><i class="bi bi-chevron-double-right"></i> &nbsp; WHISHLIST
+    </span>
+</section>
+
+    <section class="main-body">
+        <div class="my-container" style="overflow-x:auto;">
+            <table border="2">
+               <tr>
+                    <th class="image-head">Image</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Stock status</th>
+                    <th>Add to cart</th>
+                    <th>Action</th>
+               </tr>
+               <tr>
+                    <td><div class="image-box"><a href="#"><img src="./images/1.png" style="width: 100%;"></a></div></td>
+                    <td><a href="#" class="product-name">Onion & Garlic</a></td>
+                    <td>Rs 199</td>
+                    <td>In stock</td>
+                    <td><div class="cart"><a href="#">Add to Cart</a></div></td>
+                    <td><a class="remove"><i class="fa fa-times"></i></a></td>
+               </tr>
+              <tr>
+                    <td><div class="image-box"><a href="#"><img src="./images/5.png" style="width: 100%;"></a></div></td>
+                    <td><a href="#" class="product-name">Mushroom</a></td>
+                    <td>Rs 499</td>
+                    <td>In stock</td>
+                    <td><div class="cart"><a href="#">Add to Cart</a></div></td>
+                    <td><a class="remove"><i class="fa fa-times"></i></a></td>
+               </tr>
+              <tr>
+                    <td><div class="image-box"><a href="#"><img src="./images/8.png" style="width: 100%;"></a></div></td>
+                    <td><a href="#" class="product-name">Peach</a></td>
+                    <td>Rs 299</td>
+                    <td>In stock</td>
+                    <td><div class="cart"><a href="#">Add to Cart</a></div></td>
+                    <td><a class="remove"><i class="fa fa-times"></i></a></td>
+               </tr>
+              
+            </table>
+        </div>
+
+    </section>
+    <footer class="mt-5">
+        <div class="newsletter">
+            <div class="newsletter-text">
+                <div class="mail-img">
+                    <img src="images/mail.png" alt="">
+                </div>
+                <div class="mail-text">
+                    <h2>Newsletter</h2>
+                    <p>Subscribe here to get every single email</p>
+                </div>
+            </div>
+            <div class="mail-form">
+                <form>
+                    <input class="email-input" type="email" placeholder="ENTER YOUR EMAIL ADDRESS">
+                    <a href="#" class="image-link-1">Subscribe Now</a>
+                </form>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-link footer-link-1">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="logo-text">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Est veniam, quasnde!
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-link">
+                <div class="footer-header">
+                    <span>Product</span> Catalog
+                </div>
+                <div class="footer-content">
+                    <div class="footer-content-link">
+                        <a href="#">Vegetables</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Fish & Seafood</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Health Products</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Oil & Vinegars</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Butter & Eggs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-link">
+                <div class="footer-header">
+                    <span>Useful</span> Links
+                </div>
+                <div class="footer-content">
+                    <div class="footer-content-link">
+                        <a href="#">About Us</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Featured Products</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Promotional Offers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-link">
+                <div class="footer-header">
+                    <span>Download</span> Apps
+                </div>
+                <div class="footer-content">
+                    <div class="footer-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </div>
+                </div>
+                <div class="footer-img">
+                    <a href="#"><img src="images/google.png" alt=""></a>
+                </div>
+                <div class="footer-img">
+                    <a href="#"><img src="images/apple.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+   

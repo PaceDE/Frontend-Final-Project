@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Import CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <link href="css/owl.theme.default.css" rel="stylesheet">
+        <link href="css/about.css" rel="stylesheet">
+        <link href="css/headerfooter.css" rel="stylesheet">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <!-- Import Javascript  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
+        <script src="./js/dropdown.js"></script>
+
+       
+    </head>
+    <body style="background:#f5f5f5;">
+
+   <header class="header1">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-lg-1 col-md-2 col-sm-2 col-2">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-5 col-5">
+                    <div class="category-select dropdown">
+                        <button id="items" data-toggle="dropdown" onclick="changeCaret()">
+                        Select Category
+                        <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="items">
+                            <li><a onclick="itemsSet(this);" style="display:flex">Select Category</a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Vegetables </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Fruits </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Salads </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Fish & Seafood </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Fresh Meat </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Health Product </a></li>
+                            <li><a onclick="itemsSet(this);" style="display:flex">Butter & Eggs </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-5 col-5">
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="text" name="search" placeholder="Search Products..." class="search">
+                            <button type="submit" class="my-button">
+                            <i class="bi bi-search" style="color:#4D4D4D"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-1 col-md-1 col-sm-0 col-0">
+                    <div class="whishlist">
+                        <a href="whishlist.html">
+                            <i class="bi bi-suit-heart"></i>
+                            <div class="circle">2</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-1 col-md-1 col-sm-0 col-0">
+                    <div class="profile">
+                        <a href="login.html">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="phone-no">
+                        <i class="bi bi-telephone-inbound"></i>
+                        <span>+977xxxxxxxxxxx</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="question-mark">
+                        <i class="bi bi-question-circle"></i>
+                        <span>Help & More</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+ </header>
+
+ <!-- Header2-->
+
+<section class="header2">
+
+    <input type="checkbox" id="check">
+        <label for="check" class="menu">
+            <i class="fa fa-bars" style="color:black;font-size: 35px;" onclick="clicked()"></i>
+        </label>
+    <nav class="header-block">
+
+        <ul  class="no-list">
+            <li>
+                <a href="index.html">Home</a>       
+            </li>
+            <li>   
+                <a href="about.html"  class="active">About Us</a>
+            </li>
+           
+            <li>
+                <a href="shop.html">Shop</a>    
+            </li>
+        </ul>
+        <ul class="has-list">
+            <li>
+                <a href="#">
+                    Page
+                    <span class="arrow">></span>
+                </a>
+                <ul class="dropdown">
+                    <a href="#"><li>Team</li></a>
+                    <a href="cart.html"><li>Cart</li></a>
+                    <a href="checkout.html"><li>Checkout</li></a>
+                    <a href="myaccount.html"><li>My Account</li></a>
+                    <a href="login.html"><li>Login Account</li></a>
+                    <a href="register.html"><li>Register Account</li></a>
+                    <a href="#"><li>Faq</li></a>
+                </ul>  
+            </li>
+        </ul>
+        <ul class="no-list">
+            <li>   
+                <a href="#">BLog</a>      
+            </li>
+            <li>     
+                <a href="#">Contact US</a>
+            </li>
+        </ul>
+     
+    </nav>
+
+    <div class="box">
+
+        
+    
+        <div class="whishlist">
+            <a href="whishlist.html">
+                <i class="bi bi-suit-heart"></i>
+                <div class="circle">2</div>
+            </a>
+        </div>
+    
+
+    
+        <div class="profile">
+            <a href="login.html">
+                <i class="bi bi-person"></i>
+            </a>
+        </div>
+   
+
+        <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvasWithBothOptions" class="basket">
+            <div class="basket-div">
+                <i class="bi bi-basket2"></i>
+                <div class="circle">5</div>
+            </div>
+        </a>
+</div>
+
+        
+           
+        
+    
+    
+    <!--Offcanvas-->
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasWithBothOptionsLabel" data-bs-scroll="true" >
+        <div class="offcanvas-header">
+            <div class="minicart-header">
+                <i class="bi bi-bag-fill"></i>
+                <span><b>3 Item</b></span>
+                <button type="button" class="close-button" data-bs-dismiss="offcanvas" aria-label="Close">&times;</button>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="minicart-products">
+                <div class="minicart-image">
+                    <img src="./images/10.png" alt="" style="width:100%;">
+                </div>
+                <div class="minicart-detail">
+                    <a class="details" href="#">Carrot</a>
+                    <span class="price">Rs 99 * 5</span>
+                    <button type="button" class="remove-item" aria-label="Close">&times;</button>
+                </div>
+            </div>
+            <div class="minicart-products">
+                <div class="minicart-image">
+                    <img src="./images/11.png" alt="" style="width:100%;">
+                </div>
+                <div class="minicart-detail">
+                    <a class="details" href="#">Turnip</a>
+                    <span class="price">Rs 149 * 3</span>
+                    <button type="button" class="remove-item" aria-label="Close">&times;</button>
+                </div>
+            </div>
+            <div class="minicart-products">
+                <div class="minicart-image">
+                    <img src="./images/12.png" alt="" style="width:100%;">
+                </div>
+                <div class="minicart-detail">
+                    <a class="details" href="#">Tomato</a>
+                    <span class="price">Rs 99 * 10</span>
+                    <button type="button" class="remove-item" aria-label="Close">&times;</button>
+                </div>
+            </div>
+            <div class="minicart-bottom">
+                <h6>Total:<span>Rs 1932</span></h6>
+                <div class="view-cart">
+                    <a href="#">View Cart</a>
+                </div>
+                <div class="proceed-checkout">
+                    <a href="#">Proceed Checkout</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</section>
+
+ <!-- Banner-->
+<section class="banner">
+    <h3>About Us</h3>
+    <span>
+        <a href="#">HOME &nbsp;</a><i class="bi bi-chevron-double-right"></i> &nbsp; ABOUT US
+    </span>
+</section>
+
+<!-- About us-->
+
+<section class="about-us">
+
+    <div class="container">
+        <div class="row" style="row-gap:30px">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="images/tomato.png">
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <h2>About Us</h2>
+                <h1>Serving Organic Crop Since 1922</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus urna arcu, eu bibendum ante eleifend eu. Aliquam vitae nisi fringilla, gravida enim id, pharetra magna. Donec eu eleifend ex. Mauris et lectus velit. Sed tincidunt mauris in massa accumsan vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <i class="fa fa-check-circle"><span> &nbsp; With Love & Dedication</span></i> <br>
+                <i class="fa fa-check-circle"><span> &nbsp; The Best Trusted</span></i> <br>
+                <i class="fa fa-check-circle"><span> &nbsp; Farms In the World</span></i> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus urna arcu, eu bibendum ante eleifend eu. Aliquam vitae nisi fringilla, gravida enim id, pharetra magna. Donec eu eleifend ex.</p>
+            </div>
+       
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <embed style="width:100%; aspect-ratio: 16/9; object-fit: contain;"  src="https://www.youtube.com/embed/AlnHNi0hdO0">
+            </embed>     
+        </div>
+    </div>
+</div>
+
+<!--Video-->
+<section class="Video">
+
+    <div class="items">
+       
+        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="play">
+            <i class="fa fa-play" style="font-size: 30px; color: #679509 "></i> </i>
+        </a>
+        <h3>
+            We Are Focused On Delivering Best
+            Organic Food And User Experiences.
+        </h3>
+        <h4>
+            Nullam ipsum libero, vulputate non tristique ac, ultrices quis ipsum. Sed imperdiet diam
+            sollicitudin, molestie nisi in, commodo massa.
+        </h4>
+        <a class="shop" href="shop.html">
+            Shop Now
+        </a>
+        
+        
+    </div>
+</section>
+
+<!--Team Members-->
+
+<section class="Team">
+    <div class="heading">
+        <p>   
+                Our Team Members  
+        </p>
+    </div>
+
+    <div class="container">
+        <dic class="row d-flex justify-content-center">
+        
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">  
+                <div class="card">
+                    <div class="image-card">
+                        <img src="./images/joker.jpg">
+                        <div class="apps">   
+                            <a href="#" class="logo">
+                                <i class="fa fa-facebook"></i>
+                            </a> 
+                            <a href="#" class="logo">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                                
+                                
+                            <a href="#" class="logo">
+                                <i class="fa fa-instagram"></i>
+                            </a>        
+   
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <h4>Leo Messi</h4>
+                        <p>Founder</p>
+                    
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">  
+                <div class="card">
+                    <div class="image-card">
+                        <img src="./images/Meessii.jpg">
+                        <div class="apps">   
+                            <a href="#" class="logo">
+                                <i class="fa fa-facebook"></i>
+                            </a> 
+                            <a href="#" class="logo">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                                
+                                
+                            <a href="#" class="logo">
+                                <i class="fa fa-instagram"></i>
+                            </a>        
+   
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <h4>Meeeessssii</h4>
+                        <p>Founder</p>
+                    
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">  
+                <div class="card">
+                    <div class="image-card">
+                        <img src="./images/lollipop.jpg">
+                        <div class="apps">   
+                            <a href="#" class="logo">
+                                <i class="fa fa-facebook"></i>
+                            </a> 
+                            <a href="#" class="logo">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                                
+                                
+                            <a href="#" class="logo">
+                                <i class="fa fa-instagram"></i>
+                            </a>        
+   
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <h4>Lionel Messi</h4>
+                        <p>Founder</p>
+                    
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+ </section>
+
+ <!--Clients Feedback-->
+
+ <section class="Feedback">
+    <div class="heading">
+        <p>   
+            Clients Feedbacks
+        </p>
+    </div>
+    
+    <div class="container">
+       
+
+        <div class="owl-carousel owl-theme">
+                
+            <div class="item">
+               
+                <div class="client-box">
+                    <div class="client-image">
+                        <img src="./images/laugh.jpg" style="width:100%;">
+                    </div>
+                    <div class="client-detail">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <h3>Lionel Andres Messi</h3>
+                        <h6>Consumer</h6>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="item">
+               
+                <div class="client-box">
+                    <div class="client-image">
+                        <img src="./images/long.jpg" style="width:100%">
+                    </div>
+                    <div class="client-detail">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <h3>Lionel Andres Messi</h3>
+                        <h6>Consumer</h6>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="item">
+              
+                <div class="client-box">
+                    <div class="client-image">
+                        <img src="./images/bubble.jpg" style="width:100%">
+                    </div>
+                    <div class="client-detail">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <h3>Lionel Andres Messi</h3>
+                        <h6>Consumer</h6>
+                    </div>
+                </div>
+                
+            </div> 
+
+            <div class="item">
+              
+                <div class="client-box">
+                    <div class="client-image">
+                        <img src="./images/glass.jpg" style="width:100%">
+                    </div>
+                    <div class="client-detail">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <h3>Lionel Andres Messi</h3>
+                        <h6>Consumer</h6>
+                    </div>
+                </div>
+                
+            </div> 
+
+            <div class="item">
+              
+                <div class="client-box">
+                    <div class="client-image">
+                        <img src="./images/messiwc.jpg" style="width:100%">
+                    </div>
+                    <div class="client-detail">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <h3>Lionel Andres Messi</h3>
+                        <h6>Consumer</h6>
+                    </div>
+                </div>
+                
+            </div> 
+
+        </div>
+
+        </div>
+        </div>
+
+    </div>
+ </section>
+
+    <!--  Footer -->
+    
+
+    <footer class="mt-5">
+        <div class="newsletter">
+            <div class="newsletter-text">
+                <div class="mail-img">
+                    <img src="images/mail.png" alt="">
+                </div>
+                <div class="mail-text">
+                    <h2>Newsletter</h2>
+                    <p>Subscribe here to get every single email</p>
+                </div>
+            </div>
+            <div class="mail-form">
+                <form>
+                    <input class="email-input" type="email" placeholder="ENTER YOUR EMAIL ADDRESS">
+                    <a href="#" class="image-link-1">Subscribe Now</a>
+                </form>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-link footer-link-1">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="logo-text">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Est veniam, quasnde!
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-link">
+                <div class="footer-header">
+                    <span>Product</span> Catalog
+                </div>
+                <div class="footer-content">
+                    <div class="footer-content-link">
+                        <a href="#">Vegetables</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Fish & Seafood</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Health Products</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Oil & Vinegars</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Butter & Eggs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-link">
+                <div class="footer-header">
+                    <span>Useful</span> Links
+                </div>
+                <div class="footer-content">
+                    <div class="footer-content-link">
+                        <a href="#">About Us</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Featured Products</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="footer-content-link">
+                        <a href="#">Promotional Offers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-link">
+                <div class="footer-header">
+                    <span>Download</span> Apps
+                </div>
+                <div class="footer-content">
+                    <div class="footer-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </div>
+                </div>
+                <div class="footer-img">
+                    <a href="#"><img src="images/google.png" alt=""></a>
+                </div>
+                <div class="footer-img">
+                    <a href="#"><img src="images/apple.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+		</script>
+</body>
+</html>

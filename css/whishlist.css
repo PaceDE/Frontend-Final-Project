@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5f5f5;
+    padding: 0px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.main-body {
+    padding: 100px 0px;
+    padding-bottom: 10px;
+}
+
+.main-body .container {
+    width: 1600px;
+    min-height: 320px;
+}
+
+table {
+    border: solid 2px #DEE2E6;
+    margin: auto;
+    width: auto;
+}
+
+table tr {
+    text-align: center;
+    border: solid 2px #DEE2E6;
+}
+
+table th {
+    text-align: center;
+    border: solid 2px #DEE2E6;
+    background: #679509;
+    min-width: 100px;
+    height: 65px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding: 15px 15px;
+}
+
+table .image-head {
+    width: 120px;
+}
+
+table td {
+    height: 120px;
+    text-align: center;
+    border: solid 2px #DEE2E6;
+    padding: 10px 10px;
+}
+
+table td .image-box {
+    width: 103px;
+    height: 103px;
+}
+
+table td {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212529;
+
+}
+
+table td .product-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    transition: all ease-in-out 0.3s;
+}
+
+table td .product-name:hover {
+    color: #679509;
+}
+
+table td .cart {
+
+    background: #679509;
+    padding: 15px 25px;
+    border-radius: 35px;
+    transition: all ease-in-out 0.5s;
+}
+
+
+table td .cart:hover {
+    background: #2a660a;
+}
+
+table td .cart a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+table td .remove i {
+    font-size: x-large;
+    color: #333333;
+    transition: all 0.3s ease-in-out;
+}
+
+table td .remove:hover i {
+    color: #679509;
+}
+
+@media (max-width:785px) {
+    table td .cart {
+        border-radius: 50%;
+
+    }
+}
