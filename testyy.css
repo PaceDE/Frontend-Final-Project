@@ -1,0 +1,16 @@
+.red
+{
+    background: red;
+    width:100px;
+    height:100px;
+}
+.ytog
+{
+    background: yellow;
+    width:100px;
+    height:100px;
+}
+.red:hover ~ .ytog
+{
+    background: green;
+}
